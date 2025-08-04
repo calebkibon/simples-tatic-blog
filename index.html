@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Static Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <h1>Blog Central</h1>
+            <nav class="main-nav">
+                <a href="#latest-posts">Latest Posts</a>
+                <a href="#about-blog">About This Blog</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="latest-posts" class="blog-section">
+            <h2>Our Latest Articles</h2>
+
+            <article class="blog-post">
+                <header class="post-header">
+                    <h3>The Wonders of HTML5 Structure</h3>
+                    <p class="post-meta">Published by **Caleb Kiptoo** on August 4, 2025</p>
+                </header>
+                <div class="post-content">
+                    <p>Understanding HTML5 semantic tags is crucial for building accessible and SEO-friendly websites. Elements like `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, and `<footer>` provide meaning and structure to your content, going beyond simple `<div>` elements.</p>
+                    <p>This improves readability for search engines and assistive technologies, making your web pages more discoverable and usable for everyone. It's a fundamental step towards modern web development best practices.</p>
+                </div>
+                <footer class="post-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <span class="comments-count">3 Comments</span>
+                </footer>
+            </article>
+
+            <article class="blog-post">
+                <header class="post-header">
+                    <h3>Basic CSS3 Styling Techniques</h3>
+                    <p class="post-meta">Published by **A Guest Author** on July 28, 2025</p>
+                </header>
+                <div class="post-content">
+                    <p>CSS3 offers powerful capabilities for styling web pages. From basic color and font properties to advanced layouts with Flexbox and Grid, CSS allows you to transform plain HTML into visually appealing designs.</p>
+                    <p>This article explores some fundamental CSS properties, including selectors, declarations, box model, and simple responsive design techniques that make your website look great on any device.</p>
+                </div>
+                <footer class="post-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <span class="comments-count">1 Comment</span>
+                </footer>
+            </article>
+
+            <div id="create-post-placeholder" class="blog-section">
+                <h2>Draft a New Post</h2>
+                <form class="post-creation-form">
+                    <label for="new-post-title">Post Title:</label>
+                    <input type="text" id="new-post-title" name="new-post-title" placeholder="Your amazing title here" required>
+
+                    <label for="new-post-content">Content:</label>
+                    <textarea id="new-post-content" name="new-post-content" rows="10" placeholder="Write your blog post here..."></textarea>
+
+                    <button type="submit" class="button">Submit Draft</button>
+                    <p class="form-note"><em>Note: This is a static form. No content will be saved.</em></p>
+                </form>
+            </div>
+
+        </section>
+
+        <section id="comments-section" class="blog-section">
+            <h2>Comments for "The Wonders of HTML5 Structure"</h2>
+
+            <div class="comment-item">
+                <p class="comment-author"><strong>Reader_123</strong> <span class="comment-date">August 4, 2025</span></p>
+                <p class="comment-text">This explanation of semantic HTML is really helpful!</p>
+            </div>
+
+            <div class="comment-item">
+                <p class="comment-author"><strong>WebDev_Newbie</strong> <span class="comment-date">August 4, 2025</span></p>
+                <p class="comment-text">Thanks for the clear examples. I'm new to this and it makes sense now.</p>
+            </div>
+
+            <div class="comment-item">
+                <p class="comment-author"><strong>CSSFan</strong> <span class="comment-date">August 4, 2025</span></p>
+                <p class="comment-text">I agree, semantic HTML makes a huge difference!</p>
+            </div>
+
+            <div id="leave-comment-placeholder" class="comment-form-area">
+                <h3>Leave a Comment</h3>
+                <form class="comment-submission-form">
+                    <label for="comment-name">Your Name:</label>
+                    <input type="text" id="comment-name" name="comment-name" required>
+
+                    <label for="comment-email">Your Email (optional):</label>
+                    <input type="email" id="comment-email" name="comment-email">
+
+                    <label for="comment-body">Your Comment:</label>
+                    <textarea id="comment-body" name="comment-body" rows="5" required></textarea>
+
+                    <button type="submit" class="button">Post Comment</button>
+                    <p class="form-note"><em>Note: Comments posted here are for demonstration and will not be saved.</em></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 My Simple Static Blog. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
